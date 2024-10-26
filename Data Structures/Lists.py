@@ -1,4 +1,3 @@
-# File: lists_in_python.py
 
 # 1. Creating a list of names
 names = ["Alice", "Bob", "Charlie", "Daisy", "Edward"]
