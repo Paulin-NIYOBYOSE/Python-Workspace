@@ -30,3 +30,19 @@ print("The index of 'yellow' in the tuple is:", yellow_index)
 print("All colors in the tuple:")
 for color in colors:
     print(color)
+
+#Difference btn tuples, lists and sets  in python
+# List example
+my_list = [1, 2, 3, 2]
+my_list.append(4)         # Modifies the list
+print(my_list)            # Output: [1, 2, 3, 2, 4]
+
+# Tuple example
+my_tuple = (1, 2, 3, 2)
+# my_tuple[0] = 10       # Error: 'tuple' object does not support item assignment
+print(my_tuple)           # Output: (1, 2, 3, 2)
+
+# Set example
+my_set = {1, 2, 3, 2}      # Automatically removes duplicates
+my_set.add(4)              # Adds a new item
+print(my_set)              # Output: {1, 2, 3, 4}
