@@ -39,3 +39,27 @@ except:
 while not q.empty():
     print("Dequeued item:", q.get())
 print("-" * 50)
+
+# Example 4: Queue with `PriorityQueue`
+print("Example 4: Queue with `PriorityQueue`")
+pq = PriorityQueue()
+pq.put((2, "banana"))
+pq.put((1, "apple"))
+pq.put((3, "cherry"))
+while not pq.empty():
+    priority, item = pq.get()
+    print(f"Dequeued item with priority {priority}: {item}")
+print("-" * 50)
+
+
+# Example 5: Implementing Queue with List
+print("Example 5: Implementing Queue with List")
+queue = []
+queue.append("apple")
+queue.append("banana")
+queue.append("cherry")
+print("Queue after enqueuing:", queue)
+item = queue.pop(0)
+print("Dequeued item:", item)
+print("Queue after dequeuing:", queue)
+print("-" * 50)
