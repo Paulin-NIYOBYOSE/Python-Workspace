@@ -1,6 +1,6 @@
 from collections import deque
 from queue import Queue, PriorityQueue
-
+from collections import deque
 # Example 1: Queue Using `collections.deque`
 print("Example 1: Queue Using `collections.deque`")
 queue = deque()
@@ -44,6 +44,7 @@ print("-" * 50)
 print("Example 4: Queue with `PriorityQueue`")
 pq = PriorityQueue()
 pq.put((2, "banana"))
+
 pq.put((1, "apple"))
 pq.put((3, "cherry"))
 while not pq.empty():
@@ -63,3 +64,52 @@ item = queue.pop(0)
 print("Dequeued item:", item)
 print("Queue after dequeuing:", queue)
 print("-" * 50)
+
+#More queue exercises
+data = []
+data.append(5)
+data.append(10)
+data.append(15)
+data.append(20)
+data.pop(0)
+data.pop(0)
+print(data)
+
+#Browser history navigation
+
+history = ["Instagram", "Facebook"]
+def visit(websiteToVisit):
+    history.append(websiteToVisit)
+
+def back():
+    if history:
+        history.pop()
+    else:
+        print("The history is empty")
+
+visit("Facebook")
+print(history)
+back()
+print(history)
+back()
+print(history)
+back()
+print(history)
+
+#Undo feature
+text = []
+def add_text(textToAdd):
+    text.append(textToAdd)
+def undo():
+    if text:
+        text.pop()
+    else:
+       print("The text is empty")
+add_text("Hello")
+add_text("World")
+print(text)
+undo()
+print(text)
+undo()
+print(text)
+undo()
