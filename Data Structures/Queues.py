@@ -75,3 +75,25 @@ data.pop(0)
 data.pop(0)
 print(data)
 
+#Queues exercises
+#Customer service line
+customers = []
+def add_customer(customerToAdd):
+    customers.append(customerToAdd);
+def serve_customer():
+    if customers:
+        customerToServe = customers.pop(0)
+        print("Serving " + customerToServe)
+    else:
+        print("No customer to serve")
+serve_customer()
+add_customer("Customer 01")
+add_customer("Customer 02")
+add_customer("Customer 03")
+print(customers)
+serve_customer()
+serve_customer()
+serve_customer()
+
+
+
