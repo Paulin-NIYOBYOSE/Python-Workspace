@@ -3,3 +3,4 @@ my_dict = {
     "age": 17,
     "city": "Kigali"
 }
+print(my_dict["name"])
