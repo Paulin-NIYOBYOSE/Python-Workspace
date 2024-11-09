@@ -33,3 +33,42 @@ stack.push(2)
 print(f"Top item is: {stack.peek()}")
 stack.pop()
 print(f"Stack is empty: {stack.is_empty()}")
+
+#Browser history navigation
+
+history = ["Instagram", "Facebook"]
+def visit(websiteToVisit):
+    history.append(websiteToVisit)
+
+def back():
+    if history:
+        history.pop()
+    else:
+        print("The history is empty")
+
+visit("Facebook")
+print(history)
+back()
+print(history)
+back()
+print(history)
+back()
+print(history)
+
+#Undo feature
+text = []
+def add_text(textToAdd):
+    text.append(textToAdd)
+def undo():
+    if text:
+        text.pop()
+    else:
+       print("The text is empty")
+add_text("Hello")
+add_text("World")
+print(text)
+undo()
+print(text)
+undo()
+print(text)
+undo()
