@@ -48,11 +48,35 @@ vowels_in_word = [char for char in word if char in vowels]
 #generate unique characters
 my_word = "banana"
 unique_chars = {char for char in my_word} # remember to use set comprehension instead of list comprehension
-print(unique_chars)
+# print(unique_chars)
 
 #capitalize words
-word_to_captilise =
+word_to_captilise = "Paulin"
+word_in_capital = [char.upper() for char in word_to_captilise]
+# print(word_in_capital)
+words = ["python", "list", "comprehension"]
+capitalized_words = [word.upper() for word in words]
+# print(capitalized_words)
 
+#filter divisible by 3
+divisible_by_3 = [num for num in range(1,11) if num % 3 == 0]
 
+#dictionary exercises
+#square dictionary
+squares_dict = {num: num**2 for num in range(1,11)}
+# print(squares_dict)
 
+#wordlength dictionary
+words = ["apple", "mango", "banana", "guava"]
+word_lengths = {word: len(word) for word in words}
+# print(word_lengths)
 
+#set comprehensions
+numbers = [1, 2, 2, 4, 6, 6, 7, 8, 9, 10]
+unique_squares = {num ** 2 for num in numbers }
+print(unique_squares)
+
+#finding palindromes
+my_words =["level", "python", "radar", "hello", "madam"]
+palindromes = [word for word in my_words if word[::-1] == word]
+# print(palindromes)
