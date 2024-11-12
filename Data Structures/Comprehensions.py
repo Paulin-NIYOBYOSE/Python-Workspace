@@ -25,12 +25,34 @@ positive_nums = [num for num in numbers if num>=0 ]
 negative_nums = [num for num in numbers if num>=0 ]
 even_nums = [num for num in numbers if num % 2 == 0 ]
 odd_nums = [num for num in numbers if num %2 == 1 ]
-print(positive_nums)
-print(negative_nums)
-print(even_nums)
-print(odd_nums)
+# print(positive_nums)
+# print(negative_nums)
+# print(even_nums)
+# print(odd_nums)
 
 grades = [85, 42, 79, 90, 56, 61, 30]
 passing = [ grade for grade in grades if grade >60 ]
-print(passing)
+# print(passing)
+
+#comprehension exercises
+#Given a list of numbers, generate a list of squares for only the even numbers.
+my_list = [1, 2, 3, 4, 5, 6]
+square_of_even_numbers = [num * num for num in my_list if num % 2 == 0]
+# print(square_of_even_numbers)
+
+#extract vowels
+word = "comprehension"
+vowels = "aeiuo"
+vowels_in_word = [char for char in word if char in vowels]
+
+#generate unique characters
+my_word = "banana"
+unique_chars = {char for char in my_word} # remember to use set comprehension instead of list comprehension
+print(unique_chars)
+
+#capitalize words
+word_to_captilise =
+
+
+
 
