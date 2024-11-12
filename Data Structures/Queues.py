@@ -148,7 +148,7 @@ def process_task():
 add_normal_task("Check email")
 add_priority_task("Fix critical bug")
 add_normal_task("Write report")
-add_priority_task("Respond to urgent client")
+add_priority_task("Respond to urgent client which is a priority task")
 process_task()  # Should process high-priority task first
 process_task()  # Continue processing tasks
 
