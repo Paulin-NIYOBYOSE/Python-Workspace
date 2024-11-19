@@ -13,5 +13,22 @@ sorted_data = sorted(data, key=lambda k: k["age"])
 print(sorted_data)
 
 #using lambda in callbacks
-button.on_click(lambda: print("Button clicked!"))
 
+#short-term utility functions with lambda
+result = (lambda x,y: x*y)(2,3)
+print(result(2,3))
+#
+#  Advantages
+# Conciseness: Quick to write for simple operations.
+# Readability: Helps in avoiding verbose(overdetailed codes) code in some contexts.
+# Flexibility: Can be used wherever a function is required as an argument.
+#
+#  Limitations
+# Single Expression: Cannot contain multiple statements or assignments.
+# Reduced Readability: Overuse in complex logic can make the code harder to read.
+# Debugging: Difficult to debug since they lack names and proper context.
+#
+# Best Practices
+# Use lambda functions for short and simple tasks.
+# Avoid lambdas when the function logic is complex or spans multiple lines.
+# Provide meaningful variable names for lambdas when assigned.
